@@ -3,8 +3,8 @@ require('dotenv').config();
 
 let sequelize;
 
-if (process.env.Rent_Itdb) {
-  sequelize = new Sequelize(process.env.Rent_Itdb);
+if (process.env.rent_itdb) {
+  sequelize = new Sequelize(process.env.rent_itdb);
 } else {
   sequelize = new Sequelize(
     process.env.DB_NAME,
