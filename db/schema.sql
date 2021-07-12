@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS rent_itdb;
+CREATE DATABASE rent_itdb;
