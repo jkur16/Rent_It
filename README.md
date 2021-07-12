@@ -15,3 +15,11 @@ So that I can store my items
 ## Description
 
 This app was created for people who have extra storage space to rent out. This app will be able to create/take down listings, create/take down want ads, login users using email, locate renters, search listings in certain area.
+
+## References
+
+## Usage
+
+## Credits
+
+## URL Link
