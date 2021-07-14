@@ -1,10 +1,7 @@
 const router = require('express').Router();
-const path = require('path');
+const apiRoutes = require('./api');
 
-// This is the 'get' route 
-router.get('/', async (req, res) => {
-  // Here, index.html is rendered
-  res.render('main');
-});
+// Prefix all routes defined in the api directory with `/api`
+router.use('/api', apiRoutes);
 
 module.exports = router;
