@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
+=======
+const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcrypt");
+const sequelize = require("../config/connection");
+>>>>>>> d3afb150eaeb0440e091488774f346b0f3d83f48
 
 class User extends Model {
   checkPassword(loginPw) {
@@ -35,6 +41,12 @@ User.init(
         len: [8],
       },
     },
+<<<<<<< HEAD
+=======
+    profilePicture: {
+      type: DataTypes.BLOB,
+    },
+>>>>>>> d3afb150eaeb0440e091488774f346b0f3d83f48
   },
   {
     hooks: {
@@ -43,7 +55,14 @@ User.init(
         return newUserData;
       },
       beforeUpdate: async (updatedUserData) => {
+<<<<<<< HEAD
         updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
+=======
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
+>>>>>>> d3afb150eaeb0440e091488774f346b0f3d83f48
         return updatedUserData;
       },
     },
@@ -51,8 +70,16 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
+<<<<<<< HEAD
     modelName: 'user',
   }
 );
 
 module.exports = User;
+=======
+    modelName: "user",
+  }
+);
+
+module.exports = User;
+>>>>>>> d3afb150eaeb0440e091488774f346b0f3d83f48
