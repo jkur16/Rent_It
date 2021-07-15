@@ -31,5 +31,6 @@ Listing.init(
     underscored: true,
     modelName: "project",
   }
-);
-module.exports = Project;
+  );
+  module.exports = Project;
+  
