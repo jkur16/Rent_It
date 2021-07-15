@@ -19,8 +19,8 @@ Listing.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: "user",
-        key: "id",
+        model: 'user',
+        key: 'id',
       },
     },
   },
@@ -29,8 +29,8 @@ Listing.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "project",
+    modelName: 'project',
   }
-  );
-  module.exports = Project;
-  
+);
+
+module.exports = Project;
