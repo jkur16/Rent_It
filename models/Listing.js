@@ -29,8 +29,8 @@ Listing.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'listing',
   }
 );
 
-module.exports = Project;
+module.exports = Listing;
