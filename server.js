@@ -18,7 +18,7 @@ const sess = {
   saveUninitialized: true,
   store: myStore
 };
-app.use(express.static(path.join(__dirname, "public/css")));
+
 app.use(session(sess));
 const hbs = exphbs.create({ helpers });
 // Set Handlebars as the default template engine.
@@ -27,15 +27,17 @@ app.set("view engine", "handlebars");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-
+app.use(express.static(path.join(__dirname, "public/css")));
 app.use(require("./controllers/"));
 
 // Starts the server to begin listening
+
+
+sequelize.sync({force: true}).then(() => {
 app.listen(PORT, () => {
   console.log("Server listening on: http://localhost:" + PORT);
 });
-
-myStore.sync()
+})
 // $(".form")
 //   .find("input, textarea")
 //   .on("keyup blur focus", function (e) {

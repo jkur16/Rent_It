@@ -38,6 +38,10 @@ User.init(
     profilePicture: {
       type: DataTypes.BLOB,
     },
+    user_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     hooks: {
