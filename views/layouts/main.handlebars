@@ -5,14 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent It</title>
-  <link rel="stylesheet" type="text/css" href="/css/jass.css">
-  <link rel="stylesheet" type="text/css" href="public/style.css">
+   {{#each css}}
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  {{/each}}
 </head>
 
 <body>
   <header>
     <h1>RENT <span class="redH1">IT</span> </h1>
   </header>
+  <main>
       {{{body}}}
   </main>
 </body>
