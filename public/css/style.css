@@ -13,19 +13,41 @@ body {
 	font-family: "Times New Roman", Times, serif;
 }
 
+h1 {
+	text-align: center;
+	font-size: 48px;
+	line-height: 58px;
+}
+
 a {
 	text-decoration: none;
-	color: pink;
+	color: black;
 	transition: 0.5s ease;
 	/* &:hover {
     color:pink;
   } */
 }
+li a {
+	display: block;
+	text-decoration: none;
+	margin-top: 50px;
+	padding: 15px;
+	color: black;
+	font-size: 20px;
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.redH1 {
+	color: red;
+}
 
 .form {
-	background: white;
-	padding: 40px;
-	max-width: 600px;
+	background: #c4c4c4;
+	padding: 40px 20px 350px 20px;
+	max-width: 450px;
+	max-height: 540px;
 	margin: 40px auto;
 	border-radius: 3px;
 	box-shadow: 0 4px 10px 4px gray;
@@ -36,19 +58,52 @@ a {
 	padding: 0;
 	margin: 0 0 40px 0;
 }
+.field-wrap {
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+.username-link {
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+.search-box {
+	margin-bottom: 10px;
+}
+.search-button {
+	margin: auto;
+	display: block;
+}
+.create-listing-link {
+	text-align: center;
+	margin: auto;
+	display: block;
+}
+.page-buttons {
+	text-align: center;
+	margin-top: 280px;
+}
+.renter-lessee-dropdown {
+	text-align: center;
+}
+.renter-lessee-dropdown select {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.location-box {
+	margin-bottom: 10px;
+}
+.location-box input {
+	margin-left: 20px;
+}
+.description-box {
+	margin-bottom: 10px;
+}
 /* &:after {
     content: "";
     display: table;
     clear: both;
   } */
-li a {
-	display: block;
-	text-decoration: none;
-	padding: 15px;
-	background: white;
-	color: pink;
-	font-size: 20px;
-	float: left;
-	width: 50%;
-	text-align: center;
-}
