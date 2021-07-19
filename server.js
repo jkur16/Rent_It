@@ -11,7 +11,7 @@ validator.isEmail("foo@bar.com"); //=> true
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const sequelize = require("../Rent_It/config/connection");
+const sequelize = require("./config/connection");
 const { link } = require("fs");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 var myStore = new SequelizeStore({ db: sequelize });
