@@ -2,28 +2,33 @@
 <div class="form">
     <h1>RENT <span class="redH1">IT</span> </h1>
   <div class="tab-content">
-    <div id="signup">
+    <form id="login">
           <div class="field-wrap">
-            <div class="username-link">
+            <div>
               <label>
                 Username:<span class="req"></span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input type="text" class="username-link" required autocomplete="off" />
             </div>
           </div>
           <div class="field-wrap">
-            <div class="passowrd-link">
+            <div>
               <label>
                 Password:<span class="req"></span>
               </label>
-              <input type="password" required auto>
+              <input type="password" class="password-link" required  autocomplete="off">
             </div>
           </div>
           <ul class="tab-group">
-            <li class="tab active"><a href="/views/signup.handlebars">Sign Up</a></li>
-            <li class="tab"><a href="/views/signedin.handlebars">Log In</a></li>
+            <li class="tab active"><a href="/signup">Sign Up</a></li>
+            <li class="tab"><button class="btn btn-primary" type="submit">Log In</button></li>
           </ul>
-       
+    </form>
+  </div>
+</div>
+
+<script src="./js/login.js"></script>
+
           
           
          
