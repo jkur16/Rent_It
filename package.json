@@ -17,7 +17,6 @@
   "description": "```\r As someone with extra property or looking for extra income\r I want to be able to create a posting\r So that I can rent out extra space",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jkur16/Rent_It.git"

@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="/css/style.css">
+<div class="form">
+    <h1>RENT <span class="redH1">IT</span> </h1>
+  <div class="tab-content">
+    <div id="signup">
+      <div class="field-wrap">
+        <div class="email-link">
+          <label>
+            Email:<span class="req"></span>
+          </label>
+          <input type="text" required autocomplete="off" />
+        </div>
+      </div>
+      <div class="field-wrap">
+        <div class="username-link">
+          <label>
+            Username:<span class="req"></span>
+          </label>
+          <input type="text" required autocomplete="off" />
+        </div>
+      </div>
+      <div class="field-wrap">
+        <div class="passowrd-link">
+          <label>
+            Password:<span class="req"></span>
+          </label>
+          <input type="password" required auto>
+        </div>
+      </div>
+      <form class="profile-photo" action="upload.php" method="post">
+        Profile Picture
+        <input type="file" name="file" id="file" />
+      </form>
+      <ul class="tab-group">
+        <li class="signup-link"><a href="/views/signedin.handlebars">Sign Up</a></li>
+      </ul>
