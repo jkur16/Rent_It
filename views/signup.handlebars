@@ -2,13 +2,13 @@
 <div class="form">
     <h1>RENT <span class="redH1">IT</span> </h1>
   <div class="tab-content">
-    <div id="signup">
+    <form id="signup">
       <div class="field-wrap">
         <div class="email-link">
           <label>
             Email:<span class="req"></span>
           </label>
-          <input type="text" required autocomplete="off" />
+          <input type="text" class ="email-link" required autocomplete="off" />
         </div>
       </div>
       <div class="field-wrap">
@@ -16,7 +16,7 @@
           <label>
             Username:<span class="req"></span>
           </label>
-          <input type="text" required autocomplete="off" />
+          <input type="text" class="username-link" required autocomplete="off" />
         </div>
       </div>
       <div class="field-wrap">
@@ -24,7 +24,7 @@
           <label>
             Password:<span class="req"></span>
           </label>
-          <input type="password" required auto>
+          <input type="password" class ="password-link" required autocomplete="off">
         </div>
       </div>
       <form class="profile-photo" action="upload.php" method="post">
@@ -34,5 +34,8 @@
       <ul class="tab-group">
         <li class="signup-link"><a href="/signedin">Sign Up</a></li>
       </ul>
+    </form>
+  </div>
+</div>
 
       <script src="./js/SignUp.js"></script>

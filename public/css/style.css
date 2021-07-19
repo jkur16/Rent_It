@@ -39,6 +39,15 @@ li a {
 	text-align: center;
 }
 
+.btn {
+	display: block;
+	text-align: center;
+	width: 16%;
+	margin-left: 42%;
+	margin-right: 42%;
+	margin-top: 10px;
+}
+
 .redH1 {
 	color: red;
 }
@@ -65,19 +74,24 @@ li a {
 	display: block;
 }
 .username-link {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .email-link {
-	margin-top: 80px;
 	margin-bottom: 10px;
-	margin-left: 20px;
+	margin-left: 12px;
+}
+
+.password-link {
+	margin-bottom: 10px;
+	margin-left: 2px;
 }
 
 .profile-photo {
 	text-align: center;
 	margin-top: 20px;
+	margin-left: 60px;
+	margin-bottom: 10px;
 }
 
 .search-box {
