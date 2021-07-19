@@ -3,6 +3,9 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const helpers = require("./utils/helpers");
+var validator = require("validator");
+
+validator.isEmail("foo@bar.com"); //=> true
 
 // Sets up the Express App
 const app = express();
