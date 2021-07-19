@@ -5,7 +5,10 @@ const signupFormHandler = async (event) => {
   const email = document.querySelector(".email-link").value.trim();
   const password = document.querySelector(".password-link").value.trim();
 
+
+=======
   validator.isEmail("foo@bar.com"); //=> true
+
 
   if (username && email && password) {
     const response = await fetch("/api/users/signup", {
@@ -21,5 +24,31 @@ const signupFormHandler = async (event) => {
     }
   }
 };
+
+
+var kraken = new Kraken({
+  api_key: "5415d7a3f6a4dfaddcd4cb90ea8db4",
+  api_secret: "Super secret secret",
+});
+
+var params = {
+  url: "https://awesome-website.com/images/header.png",
+  wait: true,
+  resize: {
+    width: 100,
+    height: 75,
+    strategy: "crop",
+  },
+};
+
+kraken.url(params, function (status) {
+  if (status.success) {
+    console.log("Success. Optimized image URL: %s", status.kraked_url);
+  } else {
+    console.log("Fail. Error message: %s", status.message);
+  }
+});
+
+=======
 
 document.querySelector("#signup").addEventListener("submit", signupFormHandler);
