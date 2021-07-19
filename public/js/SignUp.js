@@ -5,6 +5,11 @@ const signupFormHandler = async (event) => {
   const email = document.querySelector(".email-link").value.trim();
   const password = document.querySelector(".password-link").value.trim();
 
+
+=======
+  validator.isEmail("foo@bar.com"); //=> true
+
+
   if (username && email && password) {
     const response = await fetch("/api/users/signup", {
       method: "POST",
@@ -19,6 +24,7 @@ const signupFormHandler = async (event) => {
     }
   }
 };
+
 
 var kraken = new Kraken({
   api_key: "5415d7a3f6a4dfaddcd4cb90ea8db4",
@@ -42,5 +48,7 @@ kraken.url(params, function (status) {
     console.log("Fail. Error message: %s", status.message);
   }
 });
+
+=======
 
 document.querySelector("#signup").addEventListener("submit", signupFormHandler);

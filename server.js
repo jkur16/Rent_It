@@ -3,12 +3,15 @@ const session = require("express-session");
 const exphbs = require("express-handlebars");
 const path = require("path");
 const helpers = require("./utils/helpers");
+var validator = require("validator");
+
+validator.isEmail("foo@bar.com"); //=> true
 
 // Sets up the Express App
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-const sequelize = require("../Rent_It/config/connection");
+const sequelize = require("./config/connection");
 const { link } = require("fs");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 var myStore = new SequelizeStore({ db: sequelize });
