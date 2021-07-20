@@ -6,7 +6,6 @@ const signupFormHandler = async (event) => {
   const password = document.querySelector(".password-link").value.trim();
 
 
-=======
   validator.isEmail("foo@bar.com"); //=> true
 
 
@@ -49,6 +48,5 @@ kraken.url(params, function (status) {
   }
 });
 
-=======
 
 document.querySelector("#signup").addEventListener("submit", signupFormHandler);
